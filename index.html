@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Conversor de Moedas 2.0</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class="title">
+    <img class="coins" src="https://i.ibb.co/9hTgwqR/Imagem12dddsdwaaa.png">
+    <h1 class="page-title">
+      Conversor de Moedas
+    </h1>
+    <p class="page-subtitle">
+      Converta valores do Real R$
+    </p>
+  </div>
+  <div class="container">
+    <label for="moeda">Insira o valor em real</label><br>
+    <input type="number" id="valor" size="2" placeholder="R$" /><br>
+    <button type="submit" onclick="Converter()">Converter em Dólar</button>
+    <button type="submit" onclick="ConverterEuro()">Converter em Euro</button>
+    <button type="submit" onclick="ConverterLibra()">Converter em Libra</button>
+    <button type="submit" onclick="ConverterBitcoin()">Converter em Bitcoin</button>
+    <h2 id="valorConvertido"></h2>
+  </div>
+  <div class="cotacao">
+    <h3 class="cota-text">Cotação Atual</h3>
+    <div class="box-dol">
+      <a href="https://www.google.com/finance/quote/USD-BRL" onMouseover="document.imagem.src= 'https://i.ibb.co/YQLwKcy/dolar1.png' " onMouseout="document.imagem.src= 'https://i.ibb.co/8j40HN8/dolar.png' "><img src="https://i.ibb.co/8j40HN8/dolar.png" name="imagem" class="dolar"></a>
+      <div class="dolar-text">
+        <h4>Dólar</h4>
+        <p>R$ 4,85</p>
+      </div>
+    </div>
+    <div class="box-er">
+      <a href="https://www.google.com/finance/quote/EUR-BRL" onMouseover="document.imagema.src= 'https://i.ibb.co/3rXPBGX/euro1.png' " onMouseout="document.imagema.src= 'https://i.ibb.co/rQ1TScW/euro.png' "><img src="https://i.ibb.co/rQ1TScW/euro.png" name="imagema" class="euro"></a>
+      <div class="euro-text">
+        <h4>Euro</h4>
+        <p>R$ 5,32</p>
+      </div>
+    </div>
+    <div class="box-lb">
+      <a href="https://www.google.com/finance/quote/GBP-BRL" onMouseover="document.imagemb.src= 'https://i.ibb.co/BC9GWKt/libra1.png' " onMouseout="document.imagemb.src= 'https://i.ibb.co/xqb1L2r/libra.png' "><img src="https://i.ibb.co/xqb1L2r/libra.png" name="imagemb" class="libra"></a>
+      <div class="libra-text">
+        <h4>Libra</h4>
+        <p>R$ 6,39</p>
+      </div>
+    </div>
+    <div class="box-bit">
+      <a href="https://www.google.com/finance/quote/BTC-BRL?sa=X&ved=2ahUKEwiUuIKSn9_2AhWCJ7kGHU-KCjkQ-fUHegQICRAX" onMouseover="document.imagemc.src= 'https://i.ibb.co/bLKDsfH/bit1.png' " onMouseout="document.imagemc.src= 'https://i.ibb.co/WGnGD9T/bit.png' "><img src="https://i.ibb.co/WGnGD9T/bit.png" name="imagemc" class="bitcoin"></a>
+      <div class="bit-text">
+        <h4>Bitcoin</h4>
+        <p>R$ 213.290</p>
+      </div>
+    </div>
+    <p class="text-att">Atualizado em 24 de Março, 2021</p>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
